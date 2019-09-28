@@ -10,3 +10,10 @@ Instale:
 Rode:
 
 - python3 api-site-machine-learning/app.py
+
+Abra no seu navegador:
+
+- front-machine-learning/classificação.html
+
+Digite os valores nos campos de texto e clique em "Get!"
+O resultado aparecerá em seguida
