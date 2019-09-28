@@ -14,10 +14,10 @@ def hello():
 
 @app.route("/predict", methods=['POST'])
 def predict():
-    dados = request.get_json(force=True)
-    prediction = trained_model.predict(np.array([list(dados.values())]))
-    result = prediction[0]
-    response = {'predicted': int(result)}
+    data = request.get_json(force=True)
+    values = np.array([list(data.values())])
+    prediction = trained_model.predict(values)
+    response = {'predicted': int(prediction[0])}
     return jsonify(response)
 
 app.run()
